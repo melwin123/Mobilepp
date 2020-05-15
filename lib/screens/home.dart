@@ -70,8 +70,10 @@ class _HomeScreenState extends State<HomeScreen> {
 
     Widget bannerCarousel = CarouselSlider(
       items: _isBannerLoading ? [bannerCards(0)] : actions,
-      autoPlay: true,
-      enlargeCenterPage: true,
+      options: CarouselOptions(
+        autoPlay: true,
+        enlargeCenterPage: true,
+      ),
     );
     return ScopedModelDescendant<MainModel>(
         builder: (BuildContext context, Widget child, MainModel model) {

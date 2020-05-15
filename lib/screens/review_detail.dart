@@ -130,10 +130,10 @@ class _ReviewDetailScreenState extends State<ReviewDetailScreen>
                           ),
                           Padding(
                             padding: EdgeInsets.only(left: 10),
-                            child: FlutterRatingBar(
+                            child: RatingBar(
                               itemCount: 5,
-                              fillColor: Colors.orange,
-                              borderColor: Colors.orange,
+                              glowColor: Colors.orange,
+                              unratedColor: Colors.grey,
                               itemSize: 40,
                               onRatingUpdate: (index) {
                                 setState(() {
